@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <style>
+        body, html{
+            height: 100%;
+            width: 100%;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: cadetblue;
+            height: fit-content;
+            align-items: center;
+            padding: 2%;
+            border-radius: 50px;
+            box-shadow: 0 0 20px gray;
+        }
+
+        h1, label{
+            color: white;
+            font-family: monospace;
+        }
+
+        input, label{
+            margin: 5px;
+        }
+
+    </style>
+    
+    <section>
+        <h1>Cadastre-se!</h1>
+
+        <form action="">
+            <label for="">Nome</label><br>
+            <input type="text">
+            <br>
+            <label for="">Telefone</label><br>
+            <input type="text">
+            <br>
+            <label for="">Email</label><br>
+            <input type="email">
+            <br>
+            <label for="">Tipo de Pessoa</label><br>
+            <input type="radio" name="Pessoa">
+            <label for="Fisica">Física</label>
+            <input type="radio" name="Pessoa">
+            <label for="Juridica">Jurídica</label>
+            <br>
+            <br>
+            <label for="UF">UF</label>
+            <select name="UF" id="UF">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
+            
+            <input type="submit" name="Enviar" id="Enviar" style="width: 100px;">
+        </form>
+    </section>
+    
+</body>
+</html>
