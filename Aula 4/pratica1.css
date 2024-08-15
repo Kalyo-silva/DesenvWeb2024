@@ -1,0 +1,21 @@
+label{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+ul{
+    padding: 0;
+}
+
+div{
+    margin: 1em 0;
+    padding: 0 2em;
+}
+
+#dadosCadastrais{
+    background-color: cornflowerblue;
+}
+
+#DadosPessoais, #DadosResidenciais{
+    background-color: gray;
+}
