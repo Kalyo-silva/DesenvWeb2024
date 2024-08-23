@@ -1,0 +1,142 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 90%;
+    box-shadow: 0 0 10px black;
+    background: darkseagreen;
+    display: flex;
+    align-items: center;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.TitleContainer h1{
+    font-family: monospace;
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+}
+
+.TitleContainer h3{    
+    margin: 0;
+    font-family: system-ui;
+    color: darkolivegreen;
+    font-size: 1rem;
+}
+
+main{
+    width: 90%;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DualContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.DualContainer section{
+    width: 42%;
+}
+
+
+li::marker{
+    color: darkolivegreen;
+}
+
+i{
+    color: gray;
+    font-size: 1rem;
+}
+
+big{
+    color: darkolivegreen;
+    font-family: cursive;
+}
+
+section{
+    width: -webkit-fill-available;
+    margin: 2% 0px;
+    padding: 50px;
+    box-shadow: 0 0 10px gray;
+    border-radius: 25px;
+}
+
+section h2{
+    color: darkolivegreen;
+    font-family: monospace;
+    font-size: 2rem;
+}
+
+section p, ul{
+    font-size: 1.5rem;
+    font-family: system-ui;
+}
+
+img{
+    margin: 20px;
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: all 0.2s;
+}
+
+img:hover{
+    cursor: pointer;
+    border: 5px solid darkolivegreen;
+}
+
+iframe{
+    border-radius: 25px;
+    border: 5px solid darkolivegreen;
+    box-shadow: 0 0 10px;
+}
+
+audio{
+    margin-top: 25px;
+}
+
+audio::-webkit-media-controls-panel{
+    background: darkolivegreen;
+}
+
+footer{
+    width: 90%;
+    background: darkseagreen;
+    padding: 50px 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0 0 10px gray;
+}
+
+footer a {
+    font-family: system-ui;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: darkolivegreen;
+    background: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+footer a:hover{
+    cursor: pointer;
+    color: white;
+    background-color: darkolivegreen;
+}
