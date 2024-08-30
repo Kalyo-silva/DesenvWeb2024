@@ -1,29 +1,56 @@
-var table = document.getElementById('boletim')
+var table = document.getElementById('tabela')
 
-function addLinha(e){
-    tr = document.createElement('tr')
-
+function mediaNota(){
+    let tr = document.createElement('tr')
     table.appendChild(tr)
-    
+
     for(let i = 0; i < 10; i++){
         let td = document.createElement('td')
-            
         if(i == 0){
-            td.innerText = 'Média'
+            td.innerText = 'Média notas'
         }
         else{
+
             let sum = 0
             for(j = 1; j <= 6; j++){
-                let id = j+String(i) 
-
-                sum += parseFloat(document.getElementById(id).innerText)
+                let cell = document.getElementById(j.toString()+i.toString())
+                
+                sum += parseFloat(cell.innerText)
             }
 
-            td.innerText = (parseFloat(sum)/6).toFixed(2)    
+            let med = sum / 6
+
+            td.innerText = med.toFixed(2)
         }
 
-        tr.appendChild(td);
+        tr.appendChild(td)
     }
+}
 
-    e.setAttribute("disabled", true);
+
+function mediaAluno(){
+    for(let i = 0; i < 7; i++){
+        let td = null 
+        if(i == 0){
+            td = document.createElement('th')
+            td.innerText = 'Média Aluno'
+            td.rowSpan = 2
+        }
+        else{
+            td = document.createElement('td')
+            let sum = 0
+            for(j = 1; j <= 9; j++){
+                let cell = document.getElementById(i.toString()+j.toString())
+                
+                sum += parseFloat(cell.innerText)
+            }
+
+            let med = sum / 9
+
+            td.innerText = med.toFixed(2)
+        }
+
+        let tr = document.getElementById('tr'+i)
+        tr.appendChild(td)
+    }
 }
