@@ -1,0 +1,94 @@
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    padding: 1rem;
+    background: lightgreen;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: green;
+    font-family: system-ui;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+#submit{
+    width: 100%;
+    background: green;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 0.5rem;
+    color: white;
+    font-family: system-ui;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#result{
+    width: fit-content;
+    margin: 2rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
+    border: 4px solid lightgreen;
+}
+
+.container{
+    width: 48%;
+}
+
+fieldset{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid green;
+    color: green;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+#ex6{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+#ex6submit{
+    width: 100%;
+    background: green;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 0.5rem;
+    color: white;
+    font-family: system-ui;
+    font-weight: 500;
+    cursor: pointer;
+    grid-column: 1/3;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 20% auto auto auto;
+    padding: 0;
+    gap: 10px;
+}
